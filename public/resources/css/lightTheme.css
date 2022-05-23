@@ -1,0 +1,24 @@
+body, html {
+	background-color: #f5ebd9 !important;
+	color: black !important;
+}
+
+a {
+	color: var(--green) !important;
+}
+
+footer {
+	background-color: #f5ebd9;
+}
+
+label {
+	color: black !important;
+}
+
+#infos {
+	color: white;
+}
+
+footer p {
+	color: black !important;
+}

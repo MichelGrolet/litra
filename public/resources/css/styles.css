@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&family=Poppins:wght@200;600&display=swap');
+
+:root {
+	--dark: #101010;
+	--light: #f6e4d3;
+	--green: #48a096;
+	--green-dark: #316a63;
+	--green-darker: #1b3b38;
+	--green-bg: #0f211f;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color: var(--dark);
+	color: white;
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+}
+
+footer {
+	text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	color: var(--green) !important;
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 2em;
+	margin-left: 20px;
+}
+
+#box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#boxdetail {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid var(--green);
+	border-radius: 5px;
+	width: 90%;
+	margin-left: 4.6%;
+}
+
+label {
+	font-size: 1.25em;
+}
+
+.content {
+	margin: 100px 50px 0 50px;
+}
+
+.gridded {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.detailItem {
+	float: left;
+	width: 50%;
+	margin-right: 2%;
+}
+
+#imgItem {
+	height: auto;
+	width: 100%;
+}
+
+a {
+	color: var(--green);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#paiement {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#divPaiementEmit {
+	grid-column: 1;
+}
+
+#divPaiementDemande {
+	grid-column: 2;
+}
+
+.erreur {
+	color: #d72c2c;
+	font-weight: 600;
+}
+
+#affichage-profil {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+#affichage-profil img {
+	width: 80%;
+	margin-right: 100px;
+}
+
+#affichage-profil div ul {
+	line-height: 2rem;
+}
+
+#affichage-profil div p {
+	color: white;
+	background-color: #d72c2c;
+	width: 20%;
+	padding: 5px 20px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+img.accueil {
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+/* FORMULAIRES */
+
+form {
+	border: var(--green) solid 1px;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+form p {
+	margin: 20px;
+}
+
+.styleinput, input {
+	width: 250px;
+	border: none;
+	background: var(--green-darker);
+	color: white;
+	outline: none;
+	display: block;
+}
+
+select option {
+	background-color: var(--green-darker);
+}
+
+select, label, input {
+	border-radius: 5px;
+	color: white;
+	font-family: "Poppins", sans-serif;
+	display: block;
+	padding: 10px;
+	font-size: 1em;
+}
+
+select {
+	background-color: var(--green-darker);
+}
+
+input[type="submit"] {
+	background-color: var(--green);
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+input[type="submit"]:hover {
+	background-color: var(--green-dark);
+	transition: all 0.3s ease;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+	visibility: hidden;
+}
+
+input[type="file"] {
+	cursor: pointer;
+	background-color: var(--green-dark);
+}
+
+input[type="file"]::before {
+	content: '📁 Choisir une image';
+	font-family: "Poppins", sans-serif;
+}
+
+input[type="file"]:hover {
+	background-color: var(--green-darker);
+	transition: all .2s ease;
+}
+
+button.crea-event {
+	background-color: var(--green);
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	margin: 20px auto;
+	display: flex;
+	justify-content: center;
+}
+
+button.crea-event:hover {
+	background-color: var(--green-dark);
+	transition: all 0.3s ease;
+}
+
+input.red {
+	background-color: #900000;
+}
+
+input.red:hover {
+	background-color: #4c0000;
+}
+
+.form-group {
+	margin: 20px;
+	display: inline-block;
+}
+
+#video {
+	display: block;
+	margin: 0 auto;
+}
+
+#info {
+	text-align: center;
+}
+
+.center {
+	width: 100%;
+
+}
+
+.center * {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+table, tbody {
+	width: 100%;
+	border: var(--green) solid 1px;
+	border-radius: 5px;
+	box-sizing: content-box;
+	border-spacing: 0;
+	margin-bottom: 50px;
+}
+
+tbody {
+	padding: 10px;
+}
+
+th {
+	text-align: left;
+}
+
+th, td {
+	padding: 10px;
+}
+
+.ligne-total {
+	padding-left: 15px;
+	background-color: var(--green);
+	border: var(--green) solid 1px;
+	border-radius: 5px;
+}
+
+.popup-content p {
+	color: #48A096;
+}
+
+.listLineEvent {
+	width: auto;
+	margin-bottom: 5px;
+	padding: 5px;
+	padding-left: 10px;
+	border-style: solid;
+	border-radius: 0.2em;
+	border-color: white;
+	border-width: 1px;
+	display: grid;
+	grid-template-columns: 45% 15% 15% 15%;
+	background-color: #202020;
+}
+.listLineMonnaie {
+	width: 20%;
+	margin-bottom: 5px;
+	padding: 5px;
+	padding-left: 10px;
+	border-style: solid;
+	border-radius: 0.2em;
+	border-color: white;
+	display: inline-block;
+	border-width: 1px;
+	background-color: #202020;
+}
+
+#boxdetail {
+	width: 50%;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+p {
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+.wrapper {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.parent {
+	width: 90%;
+	margin: 20px;
+	height: 30vh;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.child {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+a.lien-accueil {
+	text-decoration: none;
+	font-size: 2em;
+	font-family: "Oswald", sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 50px;
+	cursor: pointer;
+	text-shadow: 0 0 50px black;
+}
+
+a.lien-accueil:hover, a.lien-accueil:focus {
+	text-decoration: none;
+}
+
+.parent:hover .child, .parent:focus .child {
+	-ms-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+	display: block;
+}
+
+.parent:hover a, .parent:focus a {
+	display: block;
+}
+
+.child:before {
+	content: "";
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

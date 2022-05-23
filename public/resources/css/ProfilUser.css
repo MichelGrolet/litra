@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&family=Poppins:wght@200&display=swap');
+
+:root {
+	--dark: #101010;
+	--light: #f6e4d3;
+	--green: #48a096;
+	--green-dark: #316a63;
+	--green-darker: #1b3b38;
+	--green-bg: #0f211f;
+}
+
+/*GENERAL*/
+#profil-body {
+	font-family: "Poppins", serif;
+	font-size: 1em;
+	color: white;
+	padding: 1% 0;
+	overflow-x: hidden;
+	word-wrap: break-word;
+}
+
+#tab {
+	text-align: center;
+	padding: 1% 3%;
+}
+
+#content {
+	margin-top: 1%;
+	padding: 2% 0;
+	display: flex;
+	flex-direction: row;
+}
+
+#box {
+	padding: 2%;
+	margin: 0 auto;
+	border: var(--green-darker) solid 1px;
+	border-radius: 5px;
+}
+
+#infos, #nav_profil {
+	padding: 2%;
+	margin: 0 auto;
+	background-color: var(--green-bg);
+	border-radius: 5px;
+}
+
+#infos {
+	/*Largeur des infos*/
+	width: 15%;
+	/*Infos les unes sous les autres*/
+	display: flex;
+	flex-direction: column;
+	/*Pour ques les infos se repartissent bien dans l'espace*/
+	justify-content: space-around;
+}
+
+#info-nom {
+	font-size: 3em;
+	margin: 0 0 0 30px;
+}
+
+.info-id {
+	margin: 10px;
+	background-color: var(--green-darker);
+	padding: 5px 20px;
+	border-radius: 15px;
+}
+
+.info-role strong {
+	background-color: var(--green-bg);
+	border-radius: 15px;
+}
+
+#profil-pp-container {
+	border-radius: 50%;
+	width: 200px !important;
+	height: 200px !important;
+	position: relative;
+	overflow: hidden;
+}
+
+#profil-pp-container img {
+	display: inline;
+	margin: 0 auto;
+	height: 100%;
+	width: auto;
+}
+
+#box {
+	width: 50%;
+	overflow-y: auto;
+}
+
+#nav_profil {
+	/*Taille de la navigation dans la page profil*/
+	width: 15%;
+	/*Alignements des boutons en colone*/
+	display: flex;
+	flex-direction: column;
+	/*Texte des boutons centrés*/
+	text-align: center;
+}
+
+.bouton i {
+	margin: 0;
+	float: left;
+}
+
+.bouton {
+	font-family: "Poppins", sans-serif;
+	margin: auto 10px;
+	padding: 3% 7%;
+	background-color: var(--green-darker);
+	color: white;
+	border-radius: 5px;
+	height: 60px;
+	border: none;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	position: relative;
+	z-index: 1;
+	width: 210px !important;
+	align-self: center;
+	text-align: right;
+	line-height: 40px;
+}
+
+.bouton:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	background: var(--green-dark);
+	transition: all 0.5s ease;
+	border-radius: 5px;
+}
+
+.bouton:hover:after {
+	left: 0;
+	width: 100%;
+}
+
+footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	font-size: 0.8em;
+	text-align: center;
+	background-color: #101010;
+	margin: 50px auto;
+	padding-bottom: 30px;
+}
+
+hr {
+	border-color: #48a096;
+}
+
+/*EDITION*/
+
+.edition_profil {
+	padding-top: 2%;
+}
+
+/*QR CODE*/
+
+#QRdiv {
+	text-align: center;
+	padding: 10%;
+}
+
+/*MES TOKENS et MES EVENEMENTS*/
+
+#mesTokenDiv,
+#mesEvenementsDiv {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.mesTokenBlockNormal,
+.mesTokenBlockExpire,
+.mesEvenementsBlockNormal,
+.mesEvenementsBlockExpire {
+	border-style: solid;
+	border-radius: 0.2em;
+	border-color: white;
+	border-width: 1px;
+	width: 12em;
+	height: auto;
+	min-height: 15em;
+	margin: 3em;
+	padding: 0;
+	text-align: center;
+}
+
+.mesTokenBlockNormal,
+.mesEvenementsBlockNormal {
+}
+
+.mesTokenBlockExpire,
+.mesEvenementsBlockExpire {
+	opacity: 40%;
+}
+
+#mesTokenBlockLink,
+#mesEvenementsBlockLink {
+	text-decoration: none;
+	color: inherit;
+}
+
+.mesTokenBlockPhoto,
+.mesEvenementsBlockPhoto {
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+}
+
+.mesEvenementsBlockPhoto img {
+	height: 100%;
+	width: 100%;
+}
+
+.mesTokenBlockName,
+.mesEvenementsBlockName {
+	font-size: 1.6em;
+}
+
+.mesTokenBlockExp,
+.mesEvenementsBlockExp {
+	margin-top: 0.7em;
+	margin-bottom: 0.7em;
+}
+
+.mesTokenBlockExp {
+	height: 2em;
+	line-height: 2em;
+}
+
+.mesEvenementsBlockExp {
+	height: 3em;
+}
+
+textarea {
+	resize: none;
+	font-family: 'Poppins', sans-serif;
+	background-color: var(--dark);
+	color: white;
+	border: var(--green) solid 1px;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 1em;
+}
+
+img#QRcode {
+	background-color: white;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+
+#menu {
+	display: none;
+	z-index: 3;
+	position: fixed;
+	top: 30px;
+	left: 20px;
+	background-color: var(--dark);
+	border-radius: 50%;
+}
+
+div.infos.infos-scan {
+	width: 90vw;
+}
+
+/*#content flex-direction column on mobilesq*/
+@media only screen and (max-width: 1200px) {
+
+	#content {
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
+	#content div, #content section, #content nav {
+		width: 80vw;
+		margin: 20px 2vw;
+	}
+	#infos {
+		display: flex;
+	}
+	#infos * {
+		margin: 10px;
+		font-size: 2rem !important;
+	}
+	#infos .info-role {
+		width: fit-content;
+	}
+	#QRcode {
+		width: 300px;
+		height: 300px;
+		display: block;
+	}
+	.text-menu {
+		display: none;
+	}
+	nav ul li a i {
+		font-size: 40px !important;
+		line-height: 60px;
+	}
+	#nav_profil {
+		display: none;
+	}
+	#nav_profil.show {
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		padding-top: 10vh;
+		top: 0;
+		left: 0;
+		width: 100% !important;
+		margin: 0 !important;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	#nav_profil.show .bouton {
+		width: 30vw !important;
+		text-align: left;
+		display: flex;
+		justify-content: space-between;
+		padding: 2px 30px;
+		height: 60px;
+		line-height: 60px;
+	}
+	#nav_profil.show .bouton i {
+		display: block;
+		margin-right: 5px;
+		line-height: 60px !important;
+		vertical-align: center;
+	}
+	.hide {
+		display: none !important;
+	}
+	#menu {
+		display: block;
+	}
+	#paiement {
+		display: flex;
+		flex-direction: column;
+	}
+	#video {
+		width: 100%;
+	}
+	#QRcode, #QRdiv {
+		margin: 0 !important;
+		width: 500px !important;
+		height: 500px !important;
+	}
+	#box {
+		overflow: hidden !important;
+	}
+	form {
+		border: var(--green) solid 4px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	h1 a {
+		font-size: 3em !important;
+	}
+	h2 {
+		font-size: 3em !important;
+	}
+	p {
+		font-size: 1.7em;
+	}
+	#nav_profil.show .bouton {
+		width: 60vw !important;
+	}
+	select, label, input {
+		font-size: 2.5em !important;
+	}
+}
