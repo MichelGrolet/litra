@@ -1,0 +1,6 @@
+public/vendor
+public/composer.lock
+.idea
+public/config/conf.ini
+public/resources/img/pps/*
+public/resources/img/imgEvt/*
