@@ -82,7 +82,7 @@ HTML;
 
 		if (isset($_SESSION['id_compte'])) {
 			$user = Compte::where('id_compte', $_SESSION['id_compte'])->first();
-			$url_pp = $router->pathFor('home')."/resources/img/pps/".$user->url_p;
+			$url_pp = $router->pathFor('home')."resources/img/pps/".$user->url_p;
 			if ($user->url_p == null /*|| !file_exists($_SERVER['DOCUMENT_ROOT'].$url_pp)*/) $pic = <<<HTML
 				<i class="material-icons account-icon">account_circle</i>
 HTML;
